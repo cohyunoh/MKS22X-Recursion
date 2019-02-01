@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class recursion{
   public static double sqrt(double n, double tolerance){
     return recursion.sqrtHelper(n, 1.0, tolerance);
@@ -17,5 +18,9 @@ public class recursion{
     // guess (BASE CASE)
       return newGuess;
     }
+  }
+
+  public static ArrayList<Integer> makeAllSums(int n){
+    ArrayList<Integer> ans = new ArrayList<Integer>();
   }
 }
