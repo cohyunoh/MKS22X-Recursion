@@ -22,5 +22,16 @@ public class recursion{
 
   public static ArrayList<Integer> makeAllSums(int n){
     ArrayList<Integer> ans = new ArrayList<Integer>();
+    recursion.makeAllSumsHelper(n, 0, n, ans);
+    return ans;
+  }
+
+  public static void makeAllSumsHelper(int n, int i, int c, ArrayList<Integer> L){
+    if(n == 0){
+      L.add(i);
+      L.add(c);
+    }else{
+      makeAllSumsHelper(n - 1, i, c + n, L);
+    }
   }
 }
