@@ -46,4 +46,15 @@ public class recursion{
       makeAllSumsHelper(n - 1, i + n, L);
     }
   }
+
+  public static int fib(int n){
+    return fibH(n,0,1);
+  }
+  public static int fibH(int n, int i, int c){
+    if(n == 0){
+      return i;
+    }else{
+      return fibH(n-1,c, i+c);
+    }
+  }
 }
