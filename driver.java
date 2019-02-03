@@ -5,6 +5,7 @@ public class driver{
     System.out.println(recursion.sqrt(100.0, 0.000001));
     System.out.println(recursion.sqrt(2.0, 0.000001));
     System.out.println(recursion.makeAllSums(3));
+    System.out.println(recursion.makeAllSums(5));
     //test 1 works
   }
 }
